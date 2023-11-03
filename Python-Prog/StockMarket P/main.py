@@ -7,12 +7,12 @@ COMPANY_NAME = "Tesla Inc"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-TApi_key = "H03N5BA99O7DY0M9"
-News_apiKey = "d3d3c515971641a587b782cc65189b0a"
+TApi_key = "8237283s273" #Your Stock Api
+News_apiKey = "d3ud6764" # Your news api
 
 
-account_sid = 'AC3234248f979bcf7b5274fd8516d84e59'
-auth_token = '5cc4cd3ff488b32ee05a5d1612b0bf04'
+account_sid = 'AC3234248f97hfaytsfas84e59' #  Twilio sid
+auth_token = '5cc4cd97879897898b0bf04' # Twilio AuthToken
 
 client = Client(account_sid, auth_token)
 
@@ -52,7 +52,7 @@ if perc <= 5:
         brief = (i['description'])
 
         message = client.messages \
-            .create(body=f"TSLA :{perc}% {symbol()}\nHeading : {heading}\nBrief: {brief}\n\n", from_='+12512377975', to='+917394992184')
+            .create(body=f"TSLA :{perc}% {symbol()}\nHeading : {heading}\nBrief: {brief}\n\n", from_='+1251237', to='+91614232184') # Your Phone numbers
 
     ## STEP 3: Use twilio.com/docs/sms/quickstart/python
     #to send a separate message with each article's title and description to your phone number. 

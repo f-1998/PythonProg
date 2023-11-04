@@ -2,7 +2,7 @@ import requests
 import datetime as dt
 
 
-TOKEN = "asd7h23" #Your Pixela token
+TOKEN = "65357h23" #Your Pixela token
 USERNAME = "xyz"
 
 pixela_endpoint = "https://pixe.la/v1/users"

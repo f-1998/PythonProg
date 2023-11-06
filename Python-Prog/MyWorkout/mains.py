@@ -2,10 +2,10 @@ import requests
 from datetime import datetime
 
 
-APP_KEY = "d38034fac8799673916640e8c12b4d58" #Your APP_key of  Nutritionix
-APP_ID = "d6cebc9b"  #Your APP_ID of  Nutritionix
+APP_KEY =  "123ujhgvutyy765" #Your APP_key of  Nutritionix
+APP_ID = "123ujhgvutyy765" #Your APP_ID of  Nutritionix
 
-USER_ID = "stanley58712"
+USER_ID = "xyz123" 
 
 nutrition_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 exercise_input = input("Tell which exercise you did today?: ")
@@ -56,7 +56,7 @@ for i in result['exercises']:
         sheety_endpoint,
         json=sheet_inputs,
         auth=(
-            "fizz", #your sheety username
-            "lambdalol", #your sheety password
+            "xyz", #your sheety username
+            "password", #your sheety password
         )
     )

@@ -3,7 +3,7 @@ import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-year = input("Enter the year : ")
+Year = input("Enter the year : ")
 response = requests.get(f"https://www.billboard.com/charts/hot-100/{Year}-08-12/")
 yc_web_page = response.text
 soup = BeautifulSoup(yc_web_page, "html.parser")
